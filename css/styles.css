@@ -1,0 +1,272 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Content Sections */
+.section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-content {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Team Goals Section */
+.team-goals {
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.goal-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.goal-item:hover {
+    transform: translateY(-5px);
+}
+
+.goal-item h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Content Spacing */
+.content {
+    margin-top: 80px; /* Account for fixed navbar */
+    padding-top: 2rem;
+}
+
+/* Join Page Styles */
+.cta-section {
+    background-color: #f5f5f5;
+    padding: 4rem 2rem;
+}
+
+.cta-container {
+    text-align: center;
+}
+
+.cta-title a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-style: italic;
+    transition: background-color 0.3s ease;
+}
+
+.cta-title a:hover {
+    background-color: #555;
+}
+
+/* Sponsorship Page Styles */
+.sponsors {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sponsor-tier {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.sponsor-tier h2 {
+    font-family: Montserrat, Arial;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.gold h2 {
+    color: #ffd966;
+}
+
+.bronze h2 {
+    color: #b45f06;
+}
+
+.sponsor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.sponsor-list a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.sponsor-list a:hover {
+    transform: translateY(-5px);
+}
+
+.sponsor-list img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .goals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .goal-item {
+        margin: 1rem 0;
+    }
+    
+    .sponsor-list {
+        grid-template-columns: 1fr;
+    }
+}
