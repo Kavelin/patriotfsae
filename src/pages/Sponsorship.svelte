@@ -11,7 +11,7 @@
         </a>
       </div>
     </div>
-
+<!--
     <div class="sponor-tier bronze section">
       <h2>Bronze Tier Sponsors</h2>
       <div class="sponor-list">
@@ -20,6 +20,7 @@
         </a>
       </div>
     </div>
+-->
   </section>
 
   <section class="section">
