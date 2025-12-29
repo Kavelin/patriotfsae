@@ -6,6 +6,7 @@
   import Join from "./pages/Join.svelte";
   import Sponsorship from "./pages/Sponsorship.svelte";
   import NotFound from "./pages/NotFound.svelte";
+  import Leadership from "./pages/Leadership.svelte";
 
   export let route = "/home";
 
@@ -73,6 +74,8 @@
     <Join />
   {:else if route === "/sponsorship"}
     <Sponsorship />
+  {:else if route === "/leadership"}
+    <Leadership />
   {:else}
     <NotFound />
   {/if}
